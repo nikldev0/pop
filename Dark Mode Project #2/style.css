@@ -1,0 +1,344 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: YoungSerif-Regular, sans-serif;
+}
+
+@font-face {
+  font-family: YoungSerif-Regular;
+  font-weight: 500;
+  src: url(/YoungSerif-Regular.otf);
+}
+
+.dark {
+  background-color: #000;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+  /* border: 3px solid green; */
+  padding: 10px;
+}
+
+.icon {
+  position: absolute;
+  right: 0px;
+  top: -90px;
+  /* outline: 2px solid red;  */
+}
+
+.fa-adjust {
+  font-size: 1.5rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  justify-content: center;
+  margin: 5rem auto;
+}
+
+button {
+  margin-bottom: 0.5rem;
+  padding: 10px;
+  background-color: #715ecf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  position: relative;
+  font-weight: 500;
+  color: rgb(39, 38, 38);
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+
+h2 {
+  color: rgb(153, 0, 255);
+  animation: text-shadow 0.75s linear infinite,
+    appear 1s ease-in forwards normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: 3rem;
+  margin-top: 1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes appear {
+  0% {
+    font-size: 0px;
+  }
+  100% {
+    font-size: 15rem;
+  }
+}
+
+@keyframes text-shadow {
+  from,
+  19.9% {
+    text-shadow: 0px 0px #15007f, 1px 1px #15007f, 2px 2px #15007f,
+      3px 3px #15007f, 4px 4px #15007f, 5px 5px #15007f, 5px 5px #fd138a,
+      6px 6px #fd138a, 7px 7px #fd138a, 8px 8px #fd138a, 9px 9px #fd138a,
+      10px 10px #fd138a, 10px 10px #ffba00, 11px 11px #ffba00, 12px 12px #ffba00,
+      13px 13px #ffba00, 14px 14px #ffba00, 15px 15px #ffba00, 15px 15px #f40000,
+      16px 16px #f40000, 17px 17px #f40000, 18px 18px #f40000, 19px 19px #f40000,
+      20px 20px #f40000, 20px 20px #28d58f, 21px 21px #28d58f, 22px 22px #28d58f,
+      23px 23px #28d58f, 24px 24px #28d58f, 25px 25px #28d58f, 25px 25px #15007f,
+      26px 26px #15007f, 27px 27px #15007f, 28px 28px #15007f, 29px 29px #15007f,
+      30px 30px #15007f, 30px 30px #fd138a, 31px 31px #fd138a, 32px 32px #fd138a,
+      33px 33px #fd138a, 34px 34px #fd138a, 35px 35px #fd138a, 35px 35px #ffba00,
+      36px 36px #ffba00, 37px 37px #ffba00, 38px 38px #ffba00, 39px 39px #ffba00,
+      40px 40px #ffba00, 40px 40px #f40000, 41px 41px #f40000, 42px 42px #f40000,
+      43px 43px #f40000, 44px 44px #f40000, 45px 45px #f40000, 45px 45px #28d58f,
+      46px 46px #28d58f, 47px 47px #28d58f, 48px 48px #28d58f, 49px 49px #28d58f,
+      50px 50px #28d58f;
+  }
+  20%,
+  39.9% {
+    text-shadow: 0px 0px #28d58f, 1px 1px #28d58f, 2px 2px #28d58f,
+      3px 3px #28d58f, 4px 4px #28d58f, 5px 5px #28d58f, 5px 5px #15007f,
+      6px 6px #15007f, 7px 7px #15007f, 8px 8px #15007f, 9px 9px #15007f,
+      10px 10px #15007f, 10px 10px #fd138a, 11px 11px #fd138a, 12px 12px #fd138a,
+      13px 13px #fd138a, 14px 14px #fd138a, 15px 15px #fd138a, 15px 15px #ffba00,
+      16px 16px #ffba00, 17px 17px #ffba00, 18px 18px #ffba00, 19px 19px #ffba00,
+      20px 20px #ffba00, 20px 20px #f40000, 21px 21px #f40000, 22px 22px #f40000,
+      23px 23px #f40000, 24px 24px #f40000, 25px 25px #f40000, 25px 25px #28d58f,
+      26px 26px #28d58f, 27px 27px #28d58f, 28px 28px #28d58f, 29px 29px #28d58f,
+      30px 30px #28d58f, 30px 30px #15007f, 31px 31px #15007f, 32px 32px #15007f,
+      33px 33px #15007f, 34px 34px #15007f, 35px 35px #15007f, 35px 35px #fd138a,
+      36px 36px #fd138a, 37px 37px #fd138a, 38px 38px #fd138a, 39px 39px #fd138a,
+      40px 40px #fd138a, 40px 40px #ffba00, 41px 41px #ffba00, 42px 42px #ffba00,
+      43px 43px #ffba00, 44px 44px #ffba00, 45px 45px #ffba00, 45px 45px #f40000,
+      46px 46px #f40000, 47px 47px #f40000, 48px 48px #f40000, 49px 49px #f40000,
+      50px 50px #f40000;
+  }
+  40%,
+  59.9% {
+    text-shadow: 0px 0px #f40000, 1px 1px #f40000, 2px 2px #f40000,
+      3px 3px #f40000, 4px 4px #f40000, 5px 5px #f40000, 5px 5px #28d58f,
+      6px 6px #28d58f, 7px 7px #28d58f, 8px 8px #28d58f, 9px 9px #28d58f,
+      10px 10px #28d58f, 10px 10px #15007f, 11px 11px #15007f, 12px 12px #15007f,
+      13px 13px #15007f, 14px 14px #15007f, 15px 15px #15007f, 15px 15px #fd138a,
+      16px 16px #fd138a, 17px 17px #fd138a, 18px 18px #fd138a, 19px 19px #fd138a,
+      20px 20px #fd138a, 20px 20px #ffba00, 21px 21px #ffba00, 22px 22px #ffba00,
+      23px 23px #ffba00, 24px 24px #ffba00, 25px 25px #ffba00, 25px 25px #f40000,
+      26px 26px #f40000, 27px 27px #f40000, 28px 28px #f40000, 29px 29px #f40000,
+      30px 30px #f40000, 30px 30px #28d58f, 31px 31px #28d58f, 32px 32px #28d58f,
+      33px 33px #28d58f, 34px 34px #28d58f, 35px 35px #28d58f, 35px 35px #15007f,
+      36px 36px #15007f, 37px 37px #15007f, 38px 38px #15007f, 39px 39px #15007f,
+      40px 40px #15007f, 40px 40px #fd138a, 41px 41px #fd138a, 42px 42px #fd138a,
+      43px 43px #fd138a, 44px 44px #fd138a, 45px 45px #fd138a, 45px 45px #ffba00,
+      46px 46px #ffba00, 47px 47px #ffba00, 48px 48px #ffba00, 49px 49px #ffba00,
+      50px 50px #ffba00;
+  }
+  60%,
+  79.9% {
+    text-shadow: 0px 0px #ffba00, 1px 1px #ffba00, 2px 2px #ffba00,
+      3px 3px #ffba00, 4px 4px #ffba00, 5px 5px #ffba00, 5px 5px #f40000,
+      6px 6px #f40000, 7px 7px #f40000, 8px 8px #f40000, 9px 9px #f40000,
+      10px 10px #f40000, 10px 10px #28d58f, 11px 11px #28d58f, 12px 12px #28d58f,
+      13px 13px #28d58f, 14px 14px #28d58f, 15px 15px #28d58f, 15px 15px #15007f,
+      16px 16px #15007f, 17px 17px #15007f, 18px 18px #15007f, 19px 19px #15007f,
+      20px 20px #15007f, 20px 20px #fd138a, 21px 21px #fd138a, 22px 22px #fd138a,
+      23px 23px #fd138a, 24px 24px #fd138a, 25px 25px #fd138a, 25px 25px #ffba00,
+      26px 26px #ffba00, 27px 27px #ffba00, 28px 28px #ffba00, 29px 29px #ffba00,
+      30px 30px #ffba00, 30px 30px #f40000, 31px 31px #f40000, 32px 32px #f40000,
+      33px 33px #f40000, 34px 34px #f40000, 35px 35px #f40000, 35px 35px #28d58f,
+      36px 36px #28d58f, 37px 37px #28d58f, 38px 38px #28d58f, 39px 39px #28d58f,
+      40px 40px #28d58f, 40px 40px #15007f, 41px 41px #15007f, 42px 42px #15007f,
+      43px 43px #15007f, 44px 44px #15007f, 45px 45px #15007f, 45px 45px #fd138a,
+      46px 46px #fd138a, 47px 47px #fd138a, 48px 48px #fd138a, 49px 49px #fd138a,
+      50px 50px #fd138a;
+  }
+  80%,
+  to {
+    text-shadow: 0px 0px #fd138a, 1px 1px #fd138a, 2px 2px #fd138a,
+      3px 3px #fd138a, 4px 4px #fd138a, 5px 5px #fd138a, 5px 5px #ffba00,
+      6px 6px #ffba00, 7px 7px #ffba00, 8px 8px #ffba00, 9px 9px #ffba00,
+      10px 10px #ffba00, 10px 10px #f40000, 11px 11px #f40000, 12px 12px #f40000,
+      13px 13px #f40000, 14px 14px #f40000, 15px 15px #f40000, 15px 15px #28d58f,
+      16px 16px #28d58f, 17px 17px #28d58f, 18px 18px #28d58f, 19px 19px #28d58f,
+      20px 20px #28d58f, 20px 20px #15007f, 21px 21px #15007f, 22px 22px #15007f,
+      23px 23px #15007f, 24px 24px #15007f, 25px 25px #15007f, 25px 25px #fd138a,
+      26px 26px #fd138a, 27px 27px #fd138a, 28px 28px #fd138a, 29px 29px #fd138a,
+      30px 30px #fd138a, 30px 30px #ffba00, 31px 31px #ffba00, 32px 32px #ffba00,
+      33px 33px #ffba00, 34px 34px #ffba00, 35px 35px #ffba00, 35px 35px #f40000,
+      36px 36px #f40000, 37px 37px #f40000, 38px 38px #f40000, 39px 39px #f40000,
+      40px 40px #f40000, 40px 40px #28d58f, 41px 41px #28d58f, 42px 42px #28d58f,
+      43px 43px #28d58f, 44px 44px #28d58f, 45px 45px #28d58f, 45px 45px #15007f,
+      46px 46px #15007f, 47px 47px #15007f, 48px 48px #15007f, 49px 49px #15007f,
+      50px 50px #15007f;
+  }
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+}
+
+/* Devices under 992px (xl) */
+@media (max-width: 991.98px) {
+}
+
+/* Devices under 770px (md) */
+@media (max-width: 770.98px) {
+
+  .container {
+    margin: 0 auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    /* overflow-x: hidden; */
+    overflow: hidden;
+  }
+
+
+  h1 {
+    position: relative;
+    font-weight: 500;
+    color: rgb(39, 38, 38);
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+
+  h2 {
+    color: rgb(153, 0, 255);
+    animation: text-shadow 0.75s linear infinite,
+      appear 1s ease-in forwards normal;
+    text-transform: uppercase;
+    /* text-align: center; */
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+
+  @keyframes appear {
+    0% {
+      font-size: 0px;
+    }
+    100% {
+      font-size: 9rem;
+    }
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 9rem;
+    justify-content: center;
+    margin: 5rem auto;
+  }
+
+  button {
+    margin-bottom: 0.5rem;
+    padding: 10px;
+    background-color: #715ecf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .icon {
+    position: absolute;
+    right: -10px;
+    top: -60px;
+    /* outline: 2px solid red;  */
+  }
+  
+  .fa-adjust {
+    font-size: 1.5rem;
+  }
+  
+  
+  
+}
+
+/* Devices under 500px (sm) */
+@media (max-width: 499.98px) {
+
+  .container {
+    margin: 0 auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    /* overflow-x: hidden; */
+    overflow: hidden;
+  }
+
+
+  h1 {
+    position: relative;
+    font-weight: 500;
+    color: rgb(39, 38, 38);
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+
+  h2 {
+    color: rgb(153, 0, 255);
+    animation: text-shadow 0.75s linear infinite,
+      appear 1s ease-in forwards normal;
+    text-transform: uppercase;
+    /* text-align: center; */
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+
+  @keyframes appear {
+    0% {
+      font-size: 0px;
+    }
+    100% {
+      font-size: 3rem;
+    }
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 9rem;
+    justify-content: center;
+    margin: 5rem auto;
+  }
+
+  button {
+    margin-bottom: 0.5rem;
+    padding: 10px;
+    background-color: #715ecf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .icon {
+    position: absolute;
+    right: -10px;
+    top: -60px;
+    /* outline: 2px solid red;  */
+  }
+  
+  .fa-adjust {
+    font-size: 1.5rem;
+  }
+  
+  
+  
+}
